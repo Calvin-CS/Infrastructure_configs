@@ -4,6 +4,6 @@
 if [ -f /etc/X11/Xsession.d/25unburden-home-dir-xdg ]; then
 	. /etc/X11/Xsession.d/25unburden-home-dir-xdg
 	if [ "$EUID" -ne 0 ]; then
-		unburden-home-dir 2&>1 > /dev/null
+		unburden-home-dir 2>&1 > /dev/null
 	fi
 fi
